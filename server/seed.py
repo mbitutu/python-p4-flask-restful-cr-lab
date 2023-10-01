@@ -21,5 +21,17 @@ with app.app_context():
         price=25.98,
     )
 
+    GET /plants/:id
+
+
+GET /plants/:id
+ ------
+    {
+    "id": 1,
+    "name": "Aloe",
+    "image": "./images/aloe.jpg",
+    "price": 11.50
+    }
+
     db.session.add_all([aloe, zz_plant])
     db.session.commit()
